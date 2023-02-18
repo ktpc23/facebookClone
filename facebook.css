@@ -25,23 +25,26 @@ body {
 }
 
 .facebook-div {
-    width: 450px;
+    max-width: 450px;
+    min-width: 10px;
     height: 350px;
     margin: 30px;
 }
 
 .grancum-div {
-    width: 400px;
+    max-width: 400px;
+    min-width: 10px;
     height: 350px;
     border: 1px solid black;
     box-shadow: 1px 1px 20px 0px black;
     background-color: aliceblue;
     padding: 20px;
+    margin: 0 20px;
 }
 
 .facebook {
     font-size: 60px;
-    font-family:  Arial, sans-serif;
+    font-family: Arial, sans-serif;
     color: rgb(42, 109, 255);
 }
 
@@ -99,7 +102,7 @@ body {
 
 .link {
     font-size: 16px;
-    color: rgb(43,122,242);
+    color: rgb(43, 122, 242);
     text-decoration: none;
 }
 
@@ -118,7 +121,7 @@ body {
 .knopki {
     width: 65%;
     height: 50px;
-    background-color: rgb(66,183,42);
+    background-color: rgb(66, 183, 42);
     font-size: 20px;
     border: none;
     border-radius: 10px;
@@ -142,4 +145,13 @@ body {
     font-weight: 700;
     color: black;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .main {
+        flex-direction: column;
+    }
+    .facebook-div {
+        height: auto;
+    }
 }
